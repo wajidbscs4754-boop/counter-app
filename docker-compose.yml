@@ -1,6 +1,6 @@
 services:
   app:
-    image: asdf417/counter-app:1.0
+    image: asdf417/counter-app:latest
     ports:
       - "5000:5000"
     env_file:

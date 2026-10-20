@@ -13,6 +13,6 @@ r = redis.Redis(host=REDIS_HOST, port=6379, password=REDIS_PASSWORD)
 @app.route("/")
 def home():
     count = r.incr("visits")
-    return f"{APP_NAME}: is page ko {count} baar dekha gaya tha!"
+    return f"{APP_NAME}: is page ko {count} baar dekha gaya tha! (K8s v2)"
 
 app.run(host="0.0.0.0", port=5000)
